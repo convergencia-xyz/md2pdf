@@ -40,7 +40,7 @@ const Header = ({ className }) => {
           <span role="img" aria-label="download">
             🎉
           </span>
-          <span>Transform</span>
+          <span>Converter</span>
         </p>
       </div>
       {/* <span className="author">Powered by @realdennis</span> */}
