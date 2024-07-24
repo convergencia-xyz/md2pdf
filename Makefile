@@ -33,7 +33,7 @@ eject:
 	$(NODE) run eject
 
 install:
-	$(NODE) install
+	$(NODE) install --frozen-lockfile
 
 clean:
 	rm -rf node_modules
