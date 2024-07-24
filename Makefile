@@ -1,5 +1,5 @@
 PACKAGE_NAME = md2pdf
-NODE = NODE_OPTIONS=--openssl-legacy-provider yarn
+NODE = NODE_OPTIONS=--openssl-legacy-provider npm
 
 # Comandos principais
 all: test build
@@ -24,7 +24,7 @@ build:
 	$(NODE) run build
 
 test:
-	$(NODE) test --watchAll=false
+	$(NODE) test -- --watchAll=false
 
 analyze:
 	$(NODE) run analyze 
@@ -33,7 +33,7 @@ eject:
 	$(NODE) run eject
 
 install:
-	$(NODE) install --frozen-lockfile
+	$(NODE) ci
 
 clean:
 	rm -rf node_modules
