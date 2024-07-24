@@ -1,5 +1,5 @@
 PACKAGE_NAME = md2pdf
-NODE = NODE_OPTIONS=--openssl-legacy-provider YARN_VERSION=1 yarn
+NODE = NODE_OPTIONS=--openssl-legacy-provider yarn
 
 # Comandos principais
 all: test build
